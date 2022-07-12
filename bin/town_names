@@ -1,102 +1,12 @@
 #!/usr/bin/env python
 import json
 import sys
-import importlib.resources as pkg_resources
-from collections import Counter
 
 import click
 
-from town_names.meaning import load_meanings
-from town_names.name import load_names
-from town_names.proportions import load_proportions
-import town_names.data as data
-
-def filter_tag_list(tag_db):
-    tag_list = list(tag_db.keys())
-    tag_list.sort()
-    remove = [
-        "family name", "male name", "female name", "saint", "definite article",
-        "preposition", "conjunction"]
-    return [tag for tag in tag_list if tag not in remove]
-
-def tag_check(tags, tag_db):
-    for tag in tags:
-        if not tag in tag_db:
-            tag_list = filter_tag_list(tag_db)
-            print("Tag: %s not found" % tag, file=sys.stderr)
-            print(file=sys.stderr)
-            for t in tag_list:
-                print(t, file=sys.stderr)
-            sys.exit(1)
-
-def deconstruct_names(names, word_db):
-    retval = [[],[]]
-    counter = 0
-    uncounted = 0
-    word_names = 0
-    word_saints = 0
-    for name in names:
-        name.find_meaning(word_db)
-        if name.has_name():
-            word_names += 1
-        if name.has_saint():
-            word_saints += 1
-        if name.count_unaccounted() == 0:
-            counter += 1
-            retval[0].append(name)
-        else:
-            retval[1].append(name)
-            uncounted += 1
-    print("Perfect: %s, names: %s, saints: %s, unaccounted: %s, total: %s" % (counter, word_names, word_saints, uncounted, len(names)), file=sys.stderr)
-    return retval
-
-def set_proportions(names, missing):
-    def gen_missing(missing):
-        vals = set()
-        for name in missing:
-            unaccounted = name.get_unaccounted()
-            for u in unaccounted:
-                vals.add(str(u))
-        retval = list(vals)
-        retval.sort()
-        return retval
-    
-    part_proportions = Counter()
-    lone_proportions = Counter()
-    struct_proportions = Counter()
-    unaccounted = gen_missing(missing)
-    for name in names:
-        for u in name.get_samples():
-            part_proportions[u] += 1
-        for u in name.get_lone_samples():
-            lone_proportions[u] += 1
-        for structure in name.get_structure():
-            struct_proportions[structure] += 1
-    return {
-        'usages': part_proportions,
-        'single_usages': lone_proportions,
-        'unaccounted': unaccounted,
-        'structures': encode_structs(struct_proportions)}
-
-def encode_structs(struct):
-    structs = []
-    for key, value in struct.items():
-        newstruct = {"proportion": value}
-        words = []
-        for word in key:
-            w = []
-            for meaning in word:
-                m = {}
-                for quality in meaning:
-                    if quality in ['pre', 'post', 'inner', 'word']:
-                        m["location"] = quality
-                    else:
-                        m[quality] = True
-                w.append(m)
-            words.append(w)
-        newstruct["words"] = words
-        structs.append(newstruct)
-    return structs
+from town_names.commands.generate import generate_command
+from town_names.commands.proportions import proportion_command
+from town_names.commands.tags import tag_command
 
 @click.group()
 @click.pass_context
@@ -106,38 +16,25 @@ def cli(ctx):
 @cli.command()
 @click.pass_context
 def tags(ctx):
-    meanings = json.load(pkg_resources.open_text(data, "meanings.json"))
-    _, tag_db = load_meanings(meanings)
-    tag_list = filter_tag_list(tag_db)
-    print(', '.join(tag_list))
+    tag_list = tag_command()
+    print('\n'.join(tag_list))
 
 @cli.command()
 @click.option('--tag', '-t', multiple=True)
 @click.argument('towns')
 @click.pass_context
 def generate(ctx, tag, towns):
-    tags = list(tag)
-    meanings = json.load(pkg_resources.open_text(data, "meanings.json"))
-    proportions = json.load(pkg_resources.open_text(data, "%s_proportions.json" % towns))
-    meaning_db, tag_db = load_meanings(meanings)
-    name_gen = load_proportions(proportions, meaning_db, tag_db)
-    if len(tags) > 0:
-        tag_check(tags, tag_db)
-    s = name_gen.select(*tags)
+    s = generate_command(tag, towns)
     print(s)
     print(s.description())
+
 
 @cli.command()
 @click.argument('towns')
 @click.pass_context
 def proportions(ctx, towns):
-    names = json.load(pkg_resources.open_text(data, "%s_place_names.json" % towns))
-    parts = json.load(pkg_resources.open_text(data, "meanings.json"))
-    names = load_names(names)
-    word_db, _ = load_meanings(parts)
-    good_names, bad_names = deconstruct_names(names, word_db)
-    proportions = set_proportions(good_names, bad_names)
-    print(json.dumps(proportions, indent=2))
+    out = proportion_command(towns)
+    print(json.dumps(out, indent=2))
 
 if __name__ == '__main__':
     sys.exit(cli(obj={}))

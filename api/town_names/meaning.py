@@ -66,8 +66,10 @@ class Meaning(object):
 def load_meanings(data):
     meaning_db = {}
     tags_db = {}
+    full_tags = set()
     for subject in data:
         tags = subject['modifier_tags']
+        modifier_type = subject['modifier_type']
         meanings = subject['meaning']
         for word in subject["words"]:
             usage = word["modern_usage"]
@@ -77,6 +79,7 @@ def load_meanings(data):
             for tag in tags:
                 t = tags_db.setdefault(tag, [])
                 t.append(usage)
+                full_tags.add((tag, modifier_type))
             w = meaning_db.setdefault(usage, [])
             w.append(meaning)
             if meaning.is_name():
@@ -88,4 +91,4 @@ def load_meanings(data):
                         t.append(plural)
                     w = meaning_db.setdefault(plural, [])
                     w.append(plural_meaning)
-    return meaning_db, tags_db
+    return meaning_db, tags_db, full_tags
