@@ -1,38 +1,38 @@
 {
   "usages": {
-    "A-": 2,
-    "-bury": 3,
     "-ben-": 1,
+    "-bury": 3,
+    "A-": 2,
     "-avon": 3,
     "Aber-": 5,
     "-carn": 2,
     "-dare": 2,
     "-nant": 5,
     "-porth": 1,
-    "Ac-": 1,
     "-ton": 48,
+    "Ac-": 1,
+    "-down": 1,
     "Adam-": 1,
     "-s-": 38,
-    "-down": 1,
     "-m-": 6,
-    "Ar-": 1,
     "-goed": 5,
+    "Ar-": 1,
     "Ash-": 1,
     "-vale": 1,
     "As-": 1,
     "Bar-": 4,
     "-mouth": 1,
     "-ry": 4,
-    "-land": 6,
     "Is-": 2,
+    "-land": 6,
     "-maris": 1,
     "Beau-": 1,
-    "-was": 1,
     "Bed-": 1,
-    "-gelly": 1,
+    "-was": 1,
     "Be-": 1,
-    "Ber-": 2,
+    "-gelly": 1,
     "-ham": 2,
+    "Ber-": 2,
     "-wyn": 4,
     "Bishop-": 1,
     "Black-": 2,
@@ -47,11 +47,11 @@
     "Bo-": 1,
     "-ley": 4,
     "Brad-": 1,
-    "Bre-": 1,
     "-con": 1,
+    "Bre-": 1,
     "Brough-": 2,
-    "-bo-": 2,
     "Brym-": 1,
+    "-bo-": 2,
     "-bo": 1,
     "-ford": 9,
     "Bryn-": 3,
@@ -62,18 +62,18 @@
     "Bur-": 3,
     "By-": 1,
     "-nea": 1,
-    "Cald-": 1,
     "-ey": 1,
+    "Cald-": 1,
     "-mel": 1,
     "Car-": 2,
-    "-o": 2,
     "Carn-": 1,
+    "-o": 2,
     "-way": 3,
     "Castle-": 1,
-    "-well": 3,
     "Ca-": 1,
-    "Cat-": 2,
+    "-well": 3,
     "-brook": 3,
+    "Cat-": 2,
     "-hays": 1,
     "Church-": 1,
     "Clap-": 2,
@@ -82,36 +82,37 @@
     "-bridge": 4,
     "Cow-": 1,
     "Hand-": 1,
-    "Cros-": 1,
+    "-s": 8,
     "-gate": 2,
+    "Cros-": 1,
     "Cross-": 2,
     "-house": 1,
     "Cul-": 1,
-    "-ant": 2,
     "Penn-": 2,
+    "-ant": 2,
     "Pen-": 12,
     "Cwm-": 4,
     "-y-": 19,
-    "-ing-": 2,
     "Down-": 1,
     "-ing": 1,
+    "-ing-": 2,
     "Earl-": 1,
     "William-": 3,
     "Edwin-": 1,
-    "El-": 1,
     "-y": 5,
-    "-loe": 1,
+    "El-": 1,
     "Ew-": 1,
-    "Fa-": 1,
-    "-or": 5,
+    "-loe": 1,
     "-en-": 7,
+    "-or": 5,
+    "Fa-": 1,
     "-bourne": 1,
     "Fair-": 5,
     "-field": 4,
     "-water": 2,
     "-hill": 8,
-    "Fish-": 1,
     "-guard": 3,
+    "Fish-": 1,
     "-hall": 1,
     "Fox-": 1,
     "Fresh-": 1,
@@ -126,19 +127,19 @@
     "Gro-": 1,
     "-mont": 1,
     "Gros-": 1,
-    "Han-": 1,
     "-mer": 1,
+    "Han-": 1,
     "Har-": 2,
     "-lech": 2,
     "Has-": 2,
-    "Haw-": 1,
-    "-den": 2,
     "-ar-": 4,
+    "-den": 2,
+    "Haw-": 1,
     "Hend-": 1,
     "Hen-": 1,
     "High-": 1,
-    "-head": 1,
     "Holy-": 2,
+    "-head": 1,
     "Hor-": 1,
     "Hough-": 1,
     "Howe-": 1,
@@ -147,23 +148,23 @@
     "John-": 2,
     "Jordan-": 1,
     "Key-": 1,
-    "Kill-": 2,
     "-ay": 2,
+    "Kill-": 2,
     "King-": 1,
     "Lamb-": 1,
     "-ore": 1,
     "Land-": 1,
     "Lang-": 2,
-    "-stone": 3,
     "-stone-": 3,
+    "-stone": 3,
     "Lan-": 1,
     "-with": 1,
     "Leck-": 1,
-    "-borough": 2,
     "Honey-": 1,
+    "-borough": 2,
     "Mil-": 4,
-    "-aber": 1,
     "Llan-": 9,
+    "-aber": 1,
     "-ellen": 1,
     "Llanerch-": 1,
     "-medd": 1,
@@ -175,8 +176,8 @@
     "-faen": 2,
     "Llys-": 1,
     "Lough-": 1,
-    "-er": 3,
     "Low-": 3,
+    "-er": 3,
     "Mach-": 2,
     "Maen-": 1,
     "-clochog": 1,
@@ -191,15 +192,15 @@
     "Mary-": 1,
     "May-": 1,
     "Middle-": 2,
-    "-wear": 1,
     "Min-": 1,
+    "-wear": 1,
     "Mon-": 1,
     "Monk-": 2,
     "Moul-": 1,
     "Plea-": 1,
     "Mur-": 1,
-    "Nant-": 2,
     "-mor": 1,
+    "Nant-": 2,
     "-glo": 1,
     "Nar-": 1,
     "-berth": 2,
@@ -215,8 +216,8 @@
     "Nor-": 1,
     "Col-": 1,
     "Over-": 1,
-    "Ox-": 2,
     "-wich": 2,
+    "Ox-": 2,
     "-eg": 1,
     "Pant-": 3,
     "-side": 2,
@@ -250,9 +251,9 @@
     "Ri-": 1,
     "Rock-": 1,
     "Roger-": 1,
-    "Ro-": 1,
-    "-sett": 1,
     "Ros-": 1,
+    "-sett": 1,
+    "Ro-": 1,
     "-ney": 1,
     "Ru-": 1,
     "Cadoc-": 1,
@@ -265,8 +266,8 @@
     "Sea-": 1,
     "-ter": 2,
     "Si-": 1,
-    "Sken-": 1,
     "-frith": 1,
+    "Sken-": 1,
     "So-": 1,
     "South-": 2,
     "-sea": 2,
@@ -275,11 +276,11 @@
     "Stan-": 1,
     "Steyn-": 1,
     "Sud-": 1,
-    "Su-": 1,
     "Summer-": 1,
+    "Su-": 1,
     "Swan-": 1,
-    "Tal-": 4,
     "-acre": 1,
+    "Tal-": 4,
     "-garth": 2,
     "Temple-": 1,
     "Thorn-": 2,
@@ -289,11 +290,11 @@
     "Tre-": 4,
     "Tref-": 4,
     "-fin": 1,
-    "Treg-": 1,
     "-are": 1,
+    "Treg-": 1,
     "Trow-": 1,
-    "Tum-": 2,
     "-ble": 2,
+    "Tum-": 2,
     "Ty-": 1,
     "Under-": 1,
     "Up-": 1,
@@ -307,8 +308,8 @@
     "Wis-": 1,
     "Wolf-": 2,
     "-dale": 1,
-    "Wood-": 2,
     "Woo-": 1,
+    "Wood-": 2,
     "-stock": 1,
     "Worth-": 1
   },
@@ -322,8 +323,8 @@
     "Castle-": 3,
     "Village-": 2,
     "Church-": 2,
-    "Ash-": 1,
     "Cross-": 5,
+    "Ash-": 1,
     "Cwm-": 2,
     "Dinas-": 2,
     "East-": 4,
@@ -359,13 +360,13 @@
     "Seven-": 1,
     "South-": 1,
     "Star-": 1,
-    "Bar-": 1,
     "Temple-": 1,
+    "Bar-": 1,
     "Upper-": 2,
     "Van-": 1,
     "Wick-": 1,
-    "Hill-": 1,
     "Wind-": 1,
+    "Hill-": 1,
     "Wood-": 1
   },
   "unaccounted": [
@@ -636,9 +637,9 @@
     "Goch",
     "Goginan",
     "Goodwick",
+    "Gorlas",
     "Gors",
     "Gorseinon",
-    "Gorsla",
     "Govilon",
     "Goytre",
     "Gresford",
@@ -868,10 +869,10 @@
     "Ystalyfera",
     "Ystrad",
     "Ystradfellte",
-    "Ystradgynlai",
     "Ystradowen",
     "Ystumtuen",
     "Ystwyth",
+    "Ytradgynlais",
     "Yy",
     "Zone",
     "abbey",
@@ -1054,6 +1055,7 @@
     "caersw",
     "caerwedros",
     "caerwent",
+    "caerws",
     "caerwys",
     "caewern",
     "caia",
@@ -1088,6 +1090,7 @@
     "corris",
     "corwen",
     "craigcefnparc",
+    "croses",
     "crosse",
     "crossenny",
     "crosses",
@@ -1684,6 +1687,7 @@
     "pisgah",
     "pistyll",
     "pontantwn",
+    "pontarais",
     "pontardawe",
     "pontarddulais",
     "pontarfynach",
@@ -1956,7 +1960,7 @@
       ]
     },
     {
-      "proportion": 15,
+      "proportion": 16,
       "words": [
         [
           {
@@ -2050,6 +2054,24 @@
       ]
     },
     {
+      "proportion": 15,
+      "words": [
+        [
+          {
+            "location": "pre"
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          },
+          {
+            "location": "post"
+          }
+        ]
+      ]
+    },
+    {
       "proportion": 5,
       "words": [
         [
@@ -2084,24 +2106,6 @@
         [
           {
             "location": "pre"
-          }
-        ]
-      ]
-    },
-    {
-      "proportion": 10,
-      "words": [
-        [
-          {
-            "location": "pre"
-          }
-        ],
-        [
-          {
-            "location": "pre"
-          },
-          {
-            "location": "post"
           }
         ]
       ]
@@ -2269,6 +2273,26 @@
       ]
     },
     {
+      "proportion": 2,
+      "words": [
+        [
+          {
+            "location": "pre",
+            "saint": true
+          }
+        ],
+        [
+          {
+            "location": "pre",
+            "name": true
+          },
+          {
+            "location": "post"
+          }
+        ]
+      ]
+    },
+    {
       "proportion": 1,
       "words": [
         [
@@ -2302,7 +2326,7 @@
             "location": "pre"
           },
           {
-            "location": "inner"
+            "location": "post"
           }
         ]
       ]
@@ -2318,11 +2342,10 @@
         ],
         [
           {
-            "location": "pre",
-            "name": true
+            "location": "pre"
           },
           {
-            "location": "post"
+            "location": "inner"
           }
         ]
       ]

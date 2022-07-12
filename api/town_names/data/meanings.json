@@ -149,7 +149,7 @@
         "modifier_tags": [
             "conjunction"
         ],
-        "modifier_type": "Conjunction",
+        "modifier_type": "Syntax",
         "words": [
             {
                 "old_english": [
@@ -10698,13 +10698,13 @@
                 "modern_usage": "Inish-"
             },
             {
-                "modern_usage": "Islay",
+                "modern_usage": "Islay-",
                 "celtic_mix": [
                     "islay"
                 ]
             },
             {
-                "modern_usage": "Isle",
+                "modern_usage": "Isle-",
                 "old_french": [
                     "insula"
                 ],
@@ -14003,7 +14003,7 @@
         "modifier_tags": [
             "preposition"
         ],
-        "modifier_type": "Preposition",
+        "modifier_type": "Syntax",
         "words": [
             {
                 "germanic": [
@@ -14129,7 +14129,7 @@
         "modifier_tags": [
             "conjunction"
         ],
-        "modifier_type": "Conjunction",
+        "modifier_type": "Syntax",
         "words": [
             {
                 "old_english": [
@@ -15425,10 +15425,16 @@
         "modifier_tags": [
             "plural"
         ],
-        "modifier_type": "Plural",
+        "modifier_type": "Syntax",
         "words": [
             {
                 "modern_usage": "-s-",
+                "old_english": [
+                    "s"
+                ]
+            },
+            {
+                "modern_usage": "-s",
                 "old_english": [
                     "s"
                 ]
@@ -20089,9 +20095,9 @@
             "The"
         ],
         "modifier_tags": [
-            "definite_article"
+            "definite article"
         ],
-        "modifier_type": "Definite Article",
+        "modifier_type": "Syntax",
         "words": [
             {
                 "modern_usage": "The-",

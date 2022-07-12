@@ -1,30 +1,30 @@
 {
   "usages": {
-    "-foyle": 7,
     "Aber-": 1,
-    "-ar-": 53,
-    "Ac-": 3,
+    "-foyle": 7,
     "-reagh": 43,
+    "Ac-": 3,
+    "-ar-": 53,
     "-res": 1,
     "-ton": 27,
     "Adam-": 4,
-    "-s-": 636,
     "-town": 309,
-    "Low-": 163,
+    "-s-": 636,
     "-er": 186,
+    "Low-": 163,
     "-wood": 45,
     "-dare": 2,
     "A-": 18,
     "-derg": 9,
     "-gall": 11,
-    "-are": 10,
     "Agh-": 17,
+    "-are": 10,
     "-row": 14,
     "-duff": 77,
-    "-en-": 93,
     "-derry": 23,
+    "-en-": 93,
+    "-le-": 145,
     "-m-": 83,
-    "-le-": 148,
     "-lin": 30,
     "-loon": 8,
     "-o": 22,
@@ -38,48 +38,49 @@
     "Alder-": 3,
     "-ford": 36,
     "-grove": 24,
-    "Ald-": 1,
     "-ridge": 4,
+    "Ald-": 1,
     "Al-": 4,
     "Allen-": 4,
     "-mead": 3,
-    "-baun": 43,
     "Alt-": 5,
-    "-more-": 148,
+    "-baun": 43,
     "-more": 143,
+    "-more-": 148,
     "-ore": 22,
+    "-s": 96,
     "-nablaha": 2,
-    "Anna-": 9,
     "-dale": 8,
+    "Anna-": 9,
     "-gar": 24,
     "-long": 7,
     "-lough": 47,
     "-oe": 16,
     "-roe": 85,
-    "Anne-": 4,
     "-field": 95,
+    "Anne-": 4,
     "-gift": 2,
     "-ville": 31,
     "Ann-": 4,
     "-brook": 25,
     "-y-": 200,
     "-y": 58,
-    "Is-": 131,
+    "Is-": 128,
     "-land": 186,
     "Apple-": 2,
     "-vale": 5,
     "Ard-": 39,
     "-bane": 45,
-    "-bo-": 26,
     "-ley": 28,
+    "-bo-": 26,
     "-boy": 52,
     "-carn": 7,
     "-cullen": 15,
-    "-ber": 10,
     "-cum-": 8,
+    "-ber": 10,
     "-ea": 21,
-    "Ar-": 9,
     "-deen": 8,
+    "Ar-": 9,
     "-glass": 40,
     "-keen": 21,
     "-keeran": 12,
@@ -101,16 +102,16 @@
     "-trasna": 13,
     "-dun": 3,
     "-hill": 101,
-    "Arn-": 1,
     "-ey": 22,
+    "Arn-": 1,
     "-ney": 9,
-    "Ash-": 11,
     "-bourne": 2,
+    "Ash-": 11,
     "-bury": 2,
     "-glen": 8,
     "As-": 1,
-    "Augh-": 8,
     "-all": 4,
+    "Augh-": 8,
     "-ness": 6,
     "-nish": 4,
     "-ry": 25,
@@ -121,13 +122,13 @@
     "Baldwin-": 1,
     "-gill": 8,
     "-island": 11,
-    "Ball-": 42,
     "-allen": 6,
+    "Ball-": 42,
     "Balla-": 2,
     "-port": 6,
     "-erin": 4,
-    "-car": 6,
     "Ballin-": 60,
+    "-car": 6,
     "-colla": 3,
     "-curra": 5,
     "-curry": 10,
@@ -159,8 +160,8 @@
     "-villa": 3,
     "-wear": 2,
     "-iny": 2,
-    "-liver": 1,
     "-ver": 8,
+    "-liver": 1,
     "-lon": 9,
     "-bridge": 12,
     "Bally-": 149,
@@ -215,8 +216,8 @@
     "-tor": 2,
     "-varra": 4,
     "-ward": 1,
-    "-baha": 5,
     "Bar-": 20,
+    "-baha": 5,
     "-cam": 13,
     "-kers-": 3,
     "-killew": 4,
@@ -246,8 +247,8 @@
     "Black-": 13,
     "-acre": 5,
     "-church": 5,
-    "-stone": 5,
     "-stone-": 7,
+    "-stone": 5,
     "-well": 13,
     "Blake-": 4,
     "Bla-": 1,
@@ -284,8 +285,8 @@
     "Cal-": 5,
     "Cald-": 1,
     "-don": 4,
-    "Car-": 18,
     "-berry": 10,
+    "Car-": 18,
     "-han": 5,
     "Carl-": 2,
     "-ow": 6,
@@ -374,8 +375,8 @@
     "Deer-": 2,
     "Dennis-": 1,
     "Derreen-": 4,
-    "-adda": 3,
     "Derry-": 56,
+    "-adda": 3,
     "-coogh": 1,
     "-harrow": 1,
     "-eg": 2,
@@ -398,8 +399,8 @@
     "-ings": 3,
     "Dri-": 16,
     "Knock-": 63,
-    "-alivaun": 1,
     "Drom-": 23,
+    "-alivaun": 1,
     "-ineer": 2,
     "-legagh": 1,
     "Drum-": 79,
@@ -423,8 +424,8 @@
     "Du-": 2,
     "Dum-": 1,
     "-nanny": 3,
-    "-bell": 2,
     "Dun-": 24,
+    "-bell": 2,
     "Dur-": 5,
     "Durn-": 1,
     "-rick": 4,
@@ -552,8 +553,8 @@
     "Hol-": 1,
     "Holme-": 2,
     "Holy-": 4,
-    "Honey-": 1,
     "-pound": 1,
+    "Honey-": 1,
     "Hop-": 1,
     "Hori-": 1,
     "Hound-": 2,
@@ -652,16 +653,16 @@
     "Mal-": 1,
     "Man-": 3,
     "Maple-": 1,
-    "Mar-": 6,
     "-dyke": 1,
+    "Mar-": 6,
     "Margaret-": 2,
     "Marl-": 6,
     "Martin-": 2,
     "Mary-": 5,
     "Matthew-": 1,
     "Maud-": 1,
-    "Maul-": 1,
     "-callee": 1,
+    "Maul-": 1,
     "Maum-": 2,
     "Maurice-": 1,
     "May-": 6,
@@ -683,8 +684,8 @@
     "Mont-": 1,
     "Mony-": 2,
     "-ord": 1,
-    "-ett": 1,
     "Mor-": 3,
+    "-ett": 1,
     "Mos-": 1,
     "Moss-": 5,
     "-pas": 1,
@@ -734,8 +735,8 @@
     "Pill-": 1,
     "Pis-": 1,
     "Plover-": 1,
-    "Plumb-": 1,
     "Plum-": 1,
+    "Plumb-": 1,
     "Pole-": 1,
     "Poll-": 6,
     "Pol-": 6,
@@ -829,16 +830,16 @@
     "Smith-": 7,
     "So-": 1,
     "Sol-": 2,
-    "-set": 1,
     "Somer-": 1,
+    "-set": 1,
     "South-": 3,
     "Spur-": 2,
     "Srah-": 8,
     "Alban-": 1,
     "Brendan-": 1,
     "Helen-": 1,
-    "-ble": 1,
     "Sta-": 3,
+    "-ble": 1,
     "Stack-": 2,
     "Stag-": 2,
     "Stal-": 1,
@@ -944,6 +945,7 @@
     "Ard-": 3,
     "Ash-": 3,
     "Hill-": 16,
+    "Isle-": 3,
     "Balla-": 1,
     "Ballin-": 1,
     "Wood-": 6,
@@ -1034,8 +1036,8 @@
     "Holy-": 1,
     "Horse-": 1,
     "Inch-": 7,
-    "Lawrence-": 3,
     "Saint-": 8,
+    "Lawrence-": 3,
     "Inish-": 1,
     "Inver-": 1,
     "Roy-": 2,
@@ -1240,6 +1242,7 @@
     "Barran",
     "Barrettsp",
     "Barrslieven",
+    "Barryps",
     "Barrysp",
     "Basket",
     "Baskethill",
@@ -1422,7 +1425,7 @@
     "Blos",
     "Bluebell",
     "Blundelstown",
-    "Blunsheen",
+    "Blunheens",
     "Blyry",
     "Bl\u00e1th",
     "Bow",
@@ -1543,13 +1546,13 @@
     "Buffanoky",
     "Buffy",
     "Bughorn",
+    "Buhmills",
     "Bumlin",
     "Buolick",
     "Bush",
     "Bushelloaf",
     "Busher",
     "Bushfield",
-    "Bushmill",
     "Bushmount",
     "Bushpark",
     "Bushtameen",
@@ -1860,7 +1863,7 @@
     "Cloonascarberry",
     "Cloonascoffagh",
     "Cloonascragh",
-    "Cloonastialla",
+    "Cloonatiallas",
     "Cloonatleva",
     "Cloonatloukaun",
     "Cloonaufill",
@@ -2437,6 +2440,7 @@
     "Clynoc",
     "Cnagho",
     "Cntycro",
+    "Coareps",
     "Coarsep",
     "Cobbs",
     "Cobh",
@@ -3476,7 +3480,7 @@
     "Doaghbeg",
     "Doaghcrabbin",
     "Doagheys",
-    "Dobbynspark",
+    "Dobbynparks",
     "Dockery's",
     "Doddsborough",
     "Dohilla",
@@ -4036,6 +4040,7 @@
     "Glackstown",
     "Gladree",
     "Glaglig",
+    "Glaheens",
     "Glanaderhig",
     "Glanageenty",
     "Glanawaddra",
@@ -5627,6 +5632,7 @@
     "Priesthaggard",
     "Priesthouse",
     "Priesttown",
+    "Priets",
     "Primatepark",
     "Primatestown",
     "Primestown",
@@ -5646,11 +5652,11 @@
     "Proleek",
     "Prologue",
     "Proonts",
+    "Properous",
     "Propoge",
     "Prospect",
     "Prospecthall",
     "Prospecthill",
-    "Prosperou",
     "Proudfootstown",
     "Proudstown",
     "Prucklish",
@@ -6196,7 +6202,7 @@
     "Thomondtown",
     "Three",
     "Threeacres",
-    "Threecastle",
+    "Threecatles",
     "Threemilewater",
     "Threewells",
     "Thulla",
@@ -6434,7 +6440,7 @@
     "Whigsborough",
     "Wimbletown",
     "Wolganstown",
-    "Wolstan",
+    "Woltans",
     "Woteraghy",
     "Wotton",
     "Wottonstown",
@@ -7300,6 +7306,7 @@
     "ardcree",
     "ardcrone",
     "ardcrony",
+    "ardcullen-marhes",
     "ardcullen-marshe",
     "ardcurley",
     "ardcvn",
@@ -7469,6 +7476,7 @@
     "ardogom",
     "ardohill",
     "ardoley",
+    "ardollus",
     "ardonan",
     "ardoohy",
     "ardoslough",
@@ -8107,6 +8115,7 @@
     "balliniska",
     "ballinive",
     "ballinkeel",
+    "ballinkelligs",
     "ballinkillin",
     "ballinkina",
     "ballinknock",
@@ -10619,8 +10628,8 @@
     "billa",
     "billeady",
     "billeragh",
+    "billies",
     "billis",
-    "billise",
     "billoos",
     "bing",
     "binganagh",
@@ -10684,7 +10693,9 @@
     "blackstep",
     "blackstick",
     "blackstroop",
+    "blacktairs",
     "blackthorn",
+    "blackticks",
     "blacktrench",
     "blackwatertown",
     "blainroe",
@@ -11325,6 +11336,7 @@
     "caddlestown",
     "caffoley",
     "cahbroder",
+    "cahels",
     "caher",
     "caherabbey",
     "caheracruttera",
@@ -12739,6 +12751,7 @@
     "castru",
     "catfort",
     "cathaganstown",
+    "catlelus",
     "catsrock",
     "cattan",
     "cauho",
@@ -14036,6 +14049,7 @@
     "cormongan",
     "cormoy",
     "cormurphy",
+    "cornaaus",
     "cornabanny",
     "cornabaste",
     "cornabavoley",
@@ -14161,7 +14175,6 @@
     "cornaroy",
     "cornaroya",
     "cornasa",
-    "cornasau",
     "cornaseer",
     "cornasham",
     "cornashe",
@@ -14509,7 +14522,9 @@
     "cromwellstownhill",
     "crooke",
     "crooket",
+    "croses",
     "crosheen",
+    "crosogs",
     "crossabeg",
     "crossagh",
     "crossan",
@@ -16109,6 +16124,7 @@
     "drumoosclin",
     "drumoske",
     "drumoula",
+    "drumparons",
     "drumparson",
     "drumpeak",
     "drumquill",
@@ -16396,7 +16412,7 @@
     "ellistown",
     "ellistrin",
     "ellistronbeg",
-    "ellistronpark",
+    "ellitronparks",
     "elmpark",
     "elphin",
     "elteen",
@@ -16422,8 +16438,8 @@
     "enaghroe",
     "end",
     "endrim",
+    "englihtenems",
     "english",
-    "englishtenem",
     "englishtown",
     "ennereilly",
     "ennisboyne",
@@ -16510,9 +16526,9 @@
     "falleighter",
     "fallgarve",
     "fallmore",
+    "fallollus",
     "fallougher",
     "fallowbeg",
-    "fallsollu",
     "falnasham",
     "falnasoogaun",
     "falsk",
@@ -16795,7 +16811,7 @@
     "forristeen",
     "fort",
     "fortane",
-    "fortaugustu",
+    "fortaugutus",
     "fortbrown",
     "fortchester",
     "fortel",
@@ -20443,6 +20459,7 @@
     "knockgrania",
     "knockgrean",
     "knockgreany",
+    "knockhanbrittas",
     "knockharley",
     "knockheel",
     "knockhogan",
@@ -21735,7 +21752,7 @@
     "loughnamuck",
     "loughnamucka",
     "loughnaneane",
-    "loughnasolli",
+    "loughnaollis",
     "loughnatouse",
     "loughooly",
     "loughoony",
@@ -21962,6 +21979,7 @@
     "magheranenagh",
     "magheranore",
     "magheranraheen",
+    "magheraollus",
     "magherapaste",
     "magherarny",
     "magheraro",
@@ -22600,11 +22618,11 @@
     "mooreenaruggan",
     "moorehall",
     "moorehill",
+    "mooreides",
     "moorepark",
     "moorerow",
     "mooresfort",
     "mooreshill",
-    "mooreside",
     "moorestown",
     "mooretown",
     "mooreunt",
@@ -23260,7 +23278,7 @@
     "newgarden",
     "newgrange",
     "newhaggard",
-    "newhouse",
+    "newhoues",
     "newlands",
     "newlawn",
     "newmarket",
@@ -23342,6 +23360,7 @@
     "nyra",
     "o'birne",
     "o'briensbridge",
+    "o'callaghanmills",
     "o'callaghansmill",
     "o'dnnell's",
     "o'grady's",
@@ -23519,6 +23538,7 @@
     "parknoe",
     "parkplace",
     "parnamoney",
+    "parons",
     "parslick",
     "parson",
     "parteen",
@@ -24584,6 +24604,7 @@
     "roeillaunbaun",
     "roeillaundoo",
     "roekilmeena",
+    "roenallis",
     "roevehagh",
     "roganspark",
     "roganstown",
@@ -24686,6 +24707,7 @@
     "rosturra",
     "rostyduff",
     "rostygah",
+    "rotollus",
     "rotten",
     "rottenhill",
     "rough",
@@ -24875,6 +24897,7 @@
     "seaforde",
     "seal",
     "seamount",
+    "seaons",
     "seapoint",
     "searkin",
     "season",
@@ -26572,7 +26595,7 @@
     "tynan",
     "tyredagh",
     "tyrone",
-    "tyrrellspa",
+    "tyrrellpas",
     "tyrrellstown",
     "ulicksmountain",
     "ullagha",
@@ -26688,6 +26711,7 @@
     "winnyhaw",
     "within",
     "without",
+    "wolfburges",
     "wolfestown",
     "wolfsburge",
     "wonderhill",
@@ -26724,7 +26748,7 @@
   ],
   "structures": [
     {
-      "proportion": 1946,
+      "proportion": 1979,
       "words": [
         [
           {
@@ -26737,7 +26761,7 @@
       ]
     },
     {
-      "proportion": 437,
+      "proportion": 448,
       "words": [
         [
           {
@@ -26817,7 +26841,7 @@
       ]
     },
     {
-      "proportion": 439,
+      "proportion": 449,
       "words": [
         [
           {
@@ -26872,7 +26896,7 @@
       ]
     },
     {
-      "proportion": 6,
+      "proportion": 7,
       "words": [
         [
           {
@@ -26891,7 +26915,7 @@
       ]
     },
     {
-      "proportion": 148,
+      "proportion": 168,
       "words": [
         [
           {
@@ -26922,7 +26946,7 @@
       ]
     },
     {
-      "proportion": 79,
+      "proportion": 82,
       "words": [
         [
           {
@@ -26940,7 +26964,7 @@
       ]
     },
     {
-      "proportion": 143,
+      "proportion": 144,
       "words": [
         [
           {
@@ -26968,7 +26992,7 @@
       ]
     },
     {
-      "proportion": 35,
+      "proportion": 36,
       "words": [
         [
           {
@@ -26996,7 +27020,7 @@
       ]
     },
     {
-      "proportion": 42,
+      "proportion": 43,
       "words": [
         [
           {
@@ -27035,7 +27059,7 @@
       ]
     },
     {
-      "proportion": 94,
+      "proportion": 100,
       "words": [
         [
           {
@@ -27049,27 +27073,6 @@
           },
           {
             "location": "post"
-          }
-        ]
-      ]
-    },
-    {
-      "proportion": 8,
-      "words": [
-        [
-          {
-            "location": "pre"
-          },
-          {
-            "location": "post"
-          }
-        ],
-        [
-          {
-            "location": "pre"
-          },
-          {
-            "location": "inner"
           }
         ]
       ]
@@ -27259,7 +27262,7 @@
             "location": "pre"
           },
           {
-            "location": "inner"
+            "location": "post"
           }
         ],
         [
@@ -27283,7 +27286,7 @@
             "location": "pre"
           },
           {
-            "location": "post"
+            "location": "inner"
           }
         ],
         [
@@ -27348,7 +27351,29 @@
       ]
     },
     {
-      "proportion": 3,
+      "proportion": 1,
+      "words": [
+        [
+          {
+            "location": "pre",
+            "name": true
+          },
+          {
+            "location": "post"
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          },
+          {
+            "location": "post"
+          }
+        ]
+      ]
+    },
+    {
+      "proportion": 4,
       "words": [
         [
           {
@@ -27387,7 +27412,7 @@
       ]
     },
     {
-      "proportion": 8,
+      "proportion": 9,
       "words": [
         [
           {
@@ -27404,28 +27429,6 @@
           },
           {
             "location": "post"
-          }
-        ]
-      ]
-    },
-    {
-      "proportion": 1,
-      "words": [
-        [
-          {
-            "location": "pre",
-            "name": true
-          },
-          {
-            "location": "post"
-          }
-        ],
-        [
-          {
-            "location": "pre"
-          },
-          {
-            "location": "inner"
           }
         ]
       ]
@@ -27458,30 +27461,6 @@
       ]
     },
     {
-      "proportion": 1,
-      "words": [
-        [
-          {
-            "location": "pre",
-            "name": true
-          }
-        ],
-        [
-          {
-            "location": "pre"
-          }
-        ],
-        [
-          {
-            "location": "pre"
-          },
-          {
-            "location": "post"
-          }
-        ]
-      ]
-    },
-    {
       "proportion": 5,
       "words": [
         [
@@ -27505,7 +27484,31 @@
       ]
     },
     {
-      "proportion": 3,
+      "proportion": 1,
+      "words": [
+        [
+          {
+            "location": "pre",
+            "name": true
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          },
+          {
+            "location": "post"
+          }
+        ]
+      ]
+    },
+    {
+      "proportion": 4,
       "words": [
         [
           {
@@ -27531,7 +27534,28 @@
       ]
     },
     {
-      "proportion": 6,
+      "proportion": 7,
+      "words": [
+        [
+          {
+            "location": "pre"
+          },
+          {
+            "location": "post"
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          },
+          {
+            "location": "inner"
+          }
+        ]
+      ]
+    },
+    {
+      "proportion": 5,
       "words": [
         [
           {
@@ -27717,6 +27741,34 @@
         [
           {
             "location": "pre"
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          },
+          {
+            "location": "post"
+          }
+        ]
+      ]
+    },
+    {
+      "proportion": 1,
+      "words": [
+        [
+          {
+            "location": "pre"
           },
           {
             "location": "inner"
@@ -27793,7 +27845,7 @@
         ],
         [
           {
-            "location": "pre"
+            "location": "post"
           }
         ],
         [
@@ -27823,7 +27875,7 @@
         ],
         [
           {
-            "location": "post"
+            "location": "pre"
           }
         ],
         [
@@ -28036,6 +28088,28 @@
           {
             "location": "pre",
             "saint": true
+          },
+          {
+            "location": "post"
+          }
+        ]
+      ]
+    },
+    {
+      "proportion": 1,
+      "words": [
+        [
+          {
+            "location": "pre",
+            "saint": true
+          },
+          {
+            "location": "post"
+          }
+        ],
+        [
+          {
+            "location": "pre"
           },
           {
             "location": "post"
@@ -28085,6 +28159,25 @@
       ]
     },
     {
+      "proportion": 5,
+      "words": [
+        [
+          {
+            "location": "pre"
+          }
+        ],
+        [
+          {
+            "location": "pre",
+            "name": true
+          },
+          {
+            "location": "post"
+          }
+        ]
+      ]
+    },
+    {
       "proportion": 2,
       "words": [
         [
@@ -28099,6 +28192,30 @@
           },
           {
             "location": "inner"
+          }
+        ],
+        [
+          {
+            "location": "pre"
+          }
+        ]
+      ]
+    },
+    {
+      "proportion": 2,
+      "words": [
+        [
+          {
+            "location": "pre"
+          }
+        ],
+        [
+          {
+            "location": "pre",
+            "name": true
+          },
+          {
+            "location": "post"
           }
         ],
         [
