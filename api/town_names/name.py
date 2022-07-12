@@ -1,7 +1,5 @@
 import itertools
-from pprint import pprint
 from town_names.word import Word
-
 
 class Name(object):
 	def __init__(self, name):
@@ -66,6 +64,15 @@ class Name(object):
 						if meaning != '':
 							new_meanings.append(meaning)
 			self.words[word] = new_meanings
+
+	def get_unaccounted(self):
+		retval = []
+		for word in self.words.keys():
+			meanings = self.words[word]
+			for meaning in meanings:
+				if meaning.count_unaccounted() > 0:
+					retval.append(meaning)
+		return retval
 
 	def filter_for_complexity(self):
 		for word in self.words.keys():

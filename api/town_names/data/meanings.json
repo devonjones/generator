@@ -144,6 +144,29 @@
     },
     {
         "meaning": [
+            "And"
+        ],
+        "modifier_tags": [
+            "conjunction"
+        ],
+        "modifier_type": "Conjunction",
+        "words": [
+            {
+                "old_english": [
+                    "ond"
+                ],
+                "modern_usage": "And-"
+            },
+            {
+                "old_english": [
+                    "ond"
+                ],
+                "modern_usage": "&-"
+            }
+        ]
+    },
+    {
+        "meaning": [
             "Apparition"
         ],
         "modifier_tags": [
@@ -13980,13 +14003,13 @@
         "modifier_tags": [
             "preposition"
         ],
-        "modifier_type": "Modifier",
+        "modifier_type": "Preposition",
         "words": [
             {
                 "germanic": [
                     "af"
                 ],
-                "modern_usage": "of"
+                "modern_usage": "Of-"
             }
         ]
     },
@@ -14096,6 +14119,23 @@
                 "old_english": [
                     "orceard"
                 ]
+            }
+        ]
+    },
+    {
+        "meaning": [
+            "Or"
+        ],
+        "modifier_tags": [
+            "conjunction"
+        ],
+        "modifier_type": "Conjunction",
+        "words": [
+            {
+                "old_english": [
+                    "oththe"
+                ],
+                "modern_usage": "Or-"
             }
         ]
     },
@@ -15374,6 +15414,23 @@
                 "modern_usage": "-plump-",
                 "old_english": [
                     "pl\u016bme"
+                ]
+            }
+        ]
+    },
+    {
+        "meaning": [
+            "Plural"
+        ],
+        "modifier_tags": [
+            "plural"
+        ],
+        "modifier_type": "Plural",
+        "words": [
+            {
+                "modern_usage": "-s-",
+                "old_english": [
+                    "s"
                 ]
             }
         ]
@@ -20034,7 +20091,7 @@
         "modifier_tags": [
             "definite_article"
         ],
-        "modifier_type": "Modifier",
+        "modifier_type": "Definite Article",
         "words": [
             {
                 "modern_usage": "The-",
