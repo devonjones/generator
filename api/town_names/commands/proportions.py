@@ -1,13 +1,15 @@
 import json
+import sys
 import importlib.resources as pkg_resources
 from collections import Counter
 
 from town_names.name import load_names
-from town_names.meaning import load_meanings
+from town_names.utils import load_meanings
 import town_names.data as data
 
 def proportion_command(towns):
-    names = json.load(pkg_resources.open_text(data, "%s_place_names.json" % towns))
+    names = json.load(pkg_resources.open_text(data, "%s_place_names.json" %
+        towns))
     parts = json.load(pkg_resources.open_text(data, "meanings.json"))
     names = load_names(names)
     word_db, _, _ = load_meanings(parts)
@@ -32,7 +34,9 @@ def deconstruct_names(names, word_db):
         else:
             retval[1].append(name)
             uncounted += 1
-    print("Perfect: %s, names: %s, saints: %s, unaccounted: %s, total: %s" % (counter, word_names, word_saints, uncounted, len(names)), file=sys.stderr)
+    print("Perfect: %s, names: %s, saints: %s, unaccounted: %s, total: %s" % (
+        counter, word_names, word_saints, uncounted, len(names)),
+        file=sys.stderr)
     return retval
 
 def set_proportions(names, missing):

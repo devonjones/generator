@@ -1,8 +1,7 @@
 import json
 import importlib.resources as pkg_resources
 
-from town_names.utils import filter_tag_list
-from town_names.meaning import load_meanings
+from town_names.utils import filter_tag_list, load_meanings
 import town_names.data as data
 
 def tag_command():

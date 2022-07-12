@@ -49,7 +49,8 @@ class MeaningGenerator(object):
                     key = list(key)
                     key.extend(addkeys)
                     key = tuple(key)
-                generator = self.generators.setdefault(key, Generator(self.tag_db, {}))
+                generator = self.generators.setdefault(key,
+                    Generator(self.tag_db, {}))
                 generator.add_item(usage, proportion)
 
     def select(self, key, *tags):

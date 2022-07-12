@@ -21,7 +21,10 @@ class Meaning(object):
         return self.usage.lower().replace("-", "")
 
     def __repr__(self):
-        return "{usage: %s, tags: %s, meanings: %s}, sources: %s, location: %s}" % (self.usage, self.tags, self.meanings, self.sources, self.location)
+        return ("{usage: %s, tags: %s, meanings: %s}"
+            ", sources: %s, location: %s") % (
+                self.usage, self.tags, self.meanings, self.sources,
+                self.location)
 
     def word_has_meaning(self, word):
         if word.find(str(self)) > -1:
@@ -63,32 +66,4 @@ class Meaning(object):
             key.append("saint")
         return tuple(key)
 
-def load_meanings(data):
-    meaning_db = {}
-    tags_db = {}
-    full_tags = set()
-    for subject in data:
-        tags = subject['modifier_tags']
-        modifier_type = subject['modifier_type']
-        meanings = subject['meaning']
-        for word in subject["words"]:
-            usage = word["modern_usage"]
-            sources = word
-            del sources["modern_usage"]
-            meaning = Meaning(usage, tags, meanings, sources)
-            for tag in tags:
-                t = tags_db.setdefault(tag, [])
-                t.append(usage)
-                full_tags.add((tag, modifier_type))
-            w = meaning_db.setdefault(usage, [])
-            w.append(meaning)
-            if meaning.is_name():
-                if not usage.endswith('s'):
-                    plural = "%ss" % usage
-                    plural_meaning = Meaning(plural, tags, meanings, sources)
-                    for tag in tags:
-                        t = tags_db.setdefault(tag, [])
-                        t.append(plural)
-                    w = meaning_db.setdefault(plural, [])
-                    w.append(plural_meaning)
-    return meaning_db, tags_db, full_tags
+
