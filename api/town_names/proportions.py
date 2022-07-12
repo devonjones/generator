@@ -29,7 +29,7 @@ class Generator(object):
         keys = set(keys)
         usages = {}
         for key in keys:
-            if self.elements.has_key(key):
+            if key in self.elements:
                 usages[key] = self.elements[key]
         return usages
 

@@ -2,15 +2,32 @@
 import json
 import sys
 import importlib.resources as pkg_resources
-import town_names.data as data
-
-from pprint import pprint
 from collections import Counter
 
 import click
 
 from town_names.meaning import load_meanings
 from town_names.name import load_names
+from town_names.proportions import load_proportions
+import town_names.data as data
+
+def filter_tag_list(tag_db):
+    tag_list = list(tag_db.keys())
+    tag_list.sort()
+    remove = [
+        "family name", "male name", "female name", "saint", "definite article",
+        "preposition", "conjunction"]
+    return [tag for tag in tag_list if tag not in remove]
+
+def tag_check(tags, tag_db):
+    for tag in tags:
+        if not tag in tag_db:
+            tag_list = filter_tag_list(tag_db)
+            print("Tag: %s not found" % tag, file=sys.stderr)
+            print(file=sys.stderr)
+            for t in tag_list:
+                print(t, file=sys.stderr)
+            sys.exit(1)
 
 def deconstruct_names(names, word_db):
     retval = [[],[]]
@@ -87,9 +104,33 @@ def cli(ctx):
     ctx.ensure_object(dict)
 
 @cli.command()
+@click.pass_context
+def tags(ctx):
+    meanings = json.load(pkg_resources.open_text(data, "meanings.json"))
+    _, tag_db = load_meanings(meanings)
+    tag_list = filter_tag_list(tag_db)
+    print(', '.join(tag_list))
+
+@cli.command()
+@click.option('--tag', '-t', multiple=True)
 @click.argument('towns')
 @click.pass_context
-def generate(ctx, towns):
+def generate(ctx, tag, towns):
+    tags = list(tag)
+    meanings = json.load(pkg_resources.open_text(data, "meanings.json"))
+    proportions = json.load(pkg_resources.open_text(data, "%s_proportions.json" % towns))
+    meaning_db, tag_db = load_meanings(meanings)
+    name_gen = load_proportions(proportions, meaning_db, tag_db)
+    if len(tags) > 0:
+        tag_check(tags, tag_db)
+    s = name_gen.select(*tags)
+    print(s)
+    print(s.description())
+
+@cli.command()
+@click.argument('towns')
+@click.pass_context
+def proportions(ctx, towns):
     names = json.load(pkg_resources.open_text(data, "%s_place_names.json" % towns))
     parts = json.load(pkg_resources.open_text(data, "meanings.json"))
     names = load_names(names)
@@ -100,3 +141,5 @@ def generate(ctx, towns):
 
 if __name__ == '__main__':
     sys.exit(cli(obj={}))
+
+
