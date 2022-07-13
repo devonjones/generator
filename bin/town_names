@@ -4,6 +4,7 @@ import sys
 
 import click
 
+from town_names.commands.deconstruct import deconstruct_command
 from town_names.commands.generate import generate_command
 from town_names.commands.proportions import proportion_command
 from town_names.commands.tags import tag_command
@@ -28,6 +29,13 @@ def generate(ctx, tag, towns):
     print(s)
     print(s.description())
 
+@cli.command()
+@click.argument('name')
+@click.pass_context
+def deconstruct(ctx, name):
+    s = deconstruct_command(name)
+    print(s)
+    print(s.description())
 
 @cli.command()
 @click.argument('towns')

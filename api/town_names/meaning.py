@@ -1,4 +1,3 @@
-
 class Meaning(object):
     def __init__(self, usage, tags, meanings, sources):
         self.usage = usage
@@ -31,7 +30,7 @@ class Meaning(object):
             return True
         return False
 
-    def test(self, word):
+    def test(self, word, prev_letter=None):
         if self.location == "word":
             if word.lower() == str(self):
                 return [self, word.lower()]
@@ -45,6 +44,18 @@ class Meaning(object):
             if word.find(str(self)) > -1:
                 parts = word.split(str(self))
                 return [parts[0], self, parts[1]]
+
+        if prev_letter:
+            test = prev_letter + word.lower()
+            if self.location == "word":
+                if test == str(self):
+                    return [self, test]
+            elif self.location == "pre":
+                if test.startswith(str(self)):
+                    return [self, test.replace(str(self), "")]
+            elif self.location == "post":
+                if test.endswith(str(self)):
+                    return [test.replace(str(self), ""), self]
 
     def is_name(self):
         for tag in self.tags:
