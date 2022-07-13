@@ -1,5 +1,8 @@
 import random
 
+from town_names.utils import find_meaning_text
+
+
 class Generator(object):
     def __init__(self, tag_db, elements):
         self.tag_db = tag_db
@@ -77,8 +80,7 @@ class NameGenerator(object):
             for key in w:
                 keys.append(self.meaning_gen.select(key))
             words.append(keys)
-        newname = NewName(struct, self.meaning_db, words)
-        return newname
+        return NewName(struct, self.meaning_db, words)
 
     def __select_tags__(self, struct, *tags):
         name_pool = []
@@ -145,34 +147,11 @@ class NewName(object):
                 meaning = self.meaning_db[e]
                 meanings = []
                 for m in meaning:
-                    meanings.append(self.__find_meaning__(m))
+                    meanings.append(find_meaning_text(m))
                 part.append(" or ".join(meanings))
                 part.append(")")
                 results.append("".join(part))
         return " ".join(results)
-
-    def __find_meaning__(self, meaning):
-        roots = self.__find_roots__(meaning)
-        meanings = meaning.meanings
-        return "%s %s" % (roots, ", ".join(meanings))
-
-    def __find_roots__(self, meaning):
-        roots = []
-        if "old_english" in meaning.sources:
-            roots.append("EN")
-        if "old_scandinavian" in meaning.sources:
-            roots.append("SC")
-        if "old_french" in meaning.sources:
-            roots.append("FR")
-        if "celtic_mix" in meaning.sources:
-            roots.append("CL")
-        if "latin" in meaning.sources:
-            roots.append("LA")
-        if "germanic" in meaning.sources:
-            roots.append("GE")
-        if "greek" in meaning.sources:
-            roots.append("GR")
-        return "/".join(roots)
 
 def word_to_key(word):
     elements = []

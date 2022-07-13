@@ -14,7 +14,7 @@ class Word(object):
         results = []
         for w in self.word:
             if isinstance(w, str):
-                results.append(w)
+                results.append("'%s'" % w)
             else:
                 results.append(w.usage)
         return " ".join(results)
@@ -37,6 +37,7 @@ class Word(object):
         results = []
         w = [w for w in self.word]
         prior = []
+        prev_letter = None
         while len(w) > 0:
             curr = w.pop(0)
             if isinstance(curr, str):
@@ -45,17 +46,22 @@ class Word(object):
                     if len(prior) == 0 and meaning.location == "word":
                         parts = meaning.test(curr)
                     elif len(w) == 0 and meaning.location == "post":
-                        parts = meaning.test(curr)
+                        parts = meaning.test(curr, prev_letter)
                     elif len(prior) == 0 and meaning.location == "pre":
                         parts = meaning.test(curr)
                     elif meaning.location == 'inner':
-                        parts  = meaning.test(curr)
+                        parts  = meaning.test(curr, prev_letter)
                     if parts:
                         result = []
                         result.extend(prior)
                         result.extend(parts)
                         result.extend(w)
                         results.append(Word([r for r in result if r != u'']))
+            else:
+                if curr.usage.endswith("-") and len(curr.usage) > 2:
+                    prev_letter = curr.usage[-2]
+                elif len(curr.usage) > 1:
+                    prev_letter = curr.usage[-1]
             prior.append(curr)
         summed_results = []
         for r in results:

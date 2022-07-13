@@ -36,15 +36,25 @@ def load_meanings(data):
                     w.append(plural_meaning)
     return meaning_db, tags_db, full_tags
 
-def word_to_key(word):
-    elements = []
-    for element in word:
-        key = [element["location"]]
-        if element.get("name", False):
-            key.append("name")
-        if element.get("saint", False):
-            key.append("saint")
-        elements.append(key)
-    if len(word) == 1:
-        elements[0].append("single")
-    return tuple([tuple(e) for e in elements])
+def find_meaning_text(meaning):
+    roots = find_roots(meaning)
+    meanings = meaning.meanings
+    return "%s %s" % (roots, ", ".join(meanings))
+
+def find_roots(meaning):
+    roots = []
+    if "old_english" in meaning.sources:
+        roots.append("EN")
+    if "old_scandinavian" in meaning.sources:
+        roots.append("SC")
+    if "old_french" in meaning.sources:
+        roots.append("FR")
+    if "celtic_mix" in meaning.sources:
+        roots.append("CL")
+    if "latin" in meaning.sources:
+        roots.append("LA")
+    if "germanic" in meaning.sources:
+        roots.append("GE")
+    if "greek" in meaning.sources:
+        roots.append("GR")
+    return "/".join(roots)
