@@ -1,8 +1,10 @@
 import time
-from flask import Flask
+from flask import Flask, request
+
+from town_names.api import town_names
 
 app = Flask(__name__, static_folder='../build', static_url_path='/')
-
+app.register_blueprint(town_names)
 
 @app.errorhandler(404)
 def not_found(e):
@@ -17,3 +19,5 @@ def index():
 @app.route('/api/time')
 def get_current_time():
     return {'time': time.time()}
+
+

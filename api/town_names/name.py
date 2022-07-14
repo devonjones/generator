@@ -128,21 +128,10 @@ class Name(object):
         return set(itertools.product(*structure))
 
     def description(self):
-        def compress_word(word_list):
-            result = OrderedDict()
-            for word in word_list:
-                for meaning in word.word:
-                    if isinstance(meaning, Meaning):
-                        data = result.setdefault(meaning.usage, set())
-                    else:
-                        data = result.setdefault(meaning, set())
-                    data.add(meaning)
-            return result
-
         results = []
         for word_key in self.words:
             word_list = self.words[word_key]
-            meanings = compress_word(word_list)
+            meanings = self.compress_word(word_list)
             single = False
             if len(meanings) == 1:
                 single = True
@@ -163,6 +152,28 @@ class Name(object):
                 part.append(")")
                 results.append("".join(part))
         return " ".join(results)
+
+    def description_data(self):
+        results = []
+        for word_key in self.words:
+            word_list = self.words[word_key]
+            meanings = self.compress_word(word_list)
+            newmeanings = []
+            for k,v in meanings.items():
+                newmeanings.append({k: list(v)})
+            results.append({word_key: newmeanings})
+        return results
+
+    def compress_word(self, word_list):
+        result = OrderedDict()
+        for word in word_list:
+            for meaning in word.word:
+                if isinstance(meaning, Meaning):
+                    data = result.setdefault(meaning.usage, set())
+                else:
+                    data = result.setdefault(meaning, set())
+                data.add(meaning)
+        return result
 
 def load_names(data):
     names = []

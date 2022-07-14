@@ -1,4 +1,5 @@
 import random
+from collections import OrderedDict
 
 from town_names.utils import find_meaning_text
 
@@ -130,6 +131,21 @@ class NewName(object):
             for e in w:
                 words.append(self.meaning_db[e])
         return repr(words)
+
+    def description_data(self):
+        results = []
+        parts = str(self).split(" ")
+        datalist = list(self.name)
+        assert len(parts) == len(self.name)
+        while len(parts) > 0:
+            word = parts.pop(0)
+            data = datalist.pop(0)
+            newmeanings = []
+            for e in data:
+                meanings = self.meaning_db[e]
+                newmeanings.append({str(e): meanings})
+            results.append({str(word): newmeanings})
+        return results
 
     def description(self):
         results = []

@@ -1,3 +1,4 @@
+
 class Meaning(object):
     def __init__(self, usage, tags, meanings, sources):
         self.usage = usage

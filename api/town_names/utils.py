@@ -1,4 +1,10 @@
+import json
+
 from town_names.meaning import Meaning
+
+class GeneralEncoder(json.JSONEncoder):
+    def default(self, o):
+        return o.__dict__
 
 def filter_tag_list(full_tags):
     remove = ["Syntax", "Nominative"]

@@ -17,11 +17,11 @@ def tag_check(tags, full_tags):
                 print(t, file=sys.stderr)
             sys.exit(1)
 
-def generate_command(tag, towns):
+def generate_command(tag, culture):
     tags = list(tag)
     meanings = json.load(pkg_resources.open_text(data, "meanings.json"))
     proportions = json.load(pkg_resources.open_text(data,
-        "%s_proportions.json" % towns))
+        "%s_proportions.json" % culture))
     meaning_db, tag_db, full_tags = load_meanings(meanings)
     name_gen = load_proportions(proportions, meaning_db, tag_db)
     if len(tags) > 0:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import json
+import json as jsonlib
 import sys
 
 import click
@@ -8,6 +8,7 @@ from town_names.commands.deconstruct import deconstruct_command
 from town_names.commands.generate import generate_command
 from town_names.commands.proportions import proportion_command
 from town_names.commands.tags import tag_command
+from town_names.utils import GeneralEncoder
 
 @click.group()
 @click.pass_context
@@ -22,27 +23,33 @@ def tags(ctx):
 
 @cli.command()
 @click.option('--tag', '-t', multiple=True)
-@click.argument('towns')
+@click.argument('culture')
 @click.pass_context
-def generate(ctx, tag, towns):
-    s = generate_command(tag, towns)
+def generate(ctx, tag, culture):
+    s = generate_command(tag, culture)
     print(s)
     print(s.description())
 
 @cli.command()
 @click.argument('name')
+@click.option('--json/--no-json', default=False)
 @click.pass_context
-def deconstruct(ctx, name):
+def deconstruct(ctx, name, json):
     s = deconstruct_command(name)
-    print(s)
-    print(s.description())
+    if json:
+        result = {}
+        result[str(s)] = s.description_data()
+        print(jsonlib.dumps(result, indent=2, cls=GeneralEncoder))
+    else:
+        print(s)
+        print(s.description())
 
 @cli.command()
-@click.argument('towns')
+@click.argument('culture')
 @click.pass_context
-def proportions(ctx, towns):
-    out = proportion_command(towns)
-    print(json.dumps(out, indent=2))
+def proportions(ctx, culture):
+    out = proportion_command(culture)
+    print(jsonlib.dumps(out, indent=2))
 
 if __name__ == '__main__':
     sys.exit(cli(obj={}))
